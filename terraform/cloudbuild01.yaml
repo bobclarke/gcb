@@ -1,0 +1,4 @@
+steps:
+- name: 'alpine'
+  args: ['bash','-c','echo',"$PROJECT_ID"]
+  
