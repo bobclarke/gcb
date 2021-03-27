@@ -2,9 +2,6 @@ steps:
 - name: 'alpine'
   args: [
     '/bin/sh','-c',
-    ' && \
-      echo Project is: $PROJECT_ID && \
-      echo Build id is: $BUILD_ID && \
-    '
-    ]
+    'echo Project is: $PROJECT_ID && Build ID is $BUILD_ID',
+  ]
   
