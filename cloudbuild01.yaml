@@ -1,4 +1,4 @@
 steps:
 - name: 'alpine'
-  args: ['/bin/sh','-c','echo $PROJECT_ID']
+  args: ['/bin/sh','-c','echo Project is: $PROJECT_ID']
   
