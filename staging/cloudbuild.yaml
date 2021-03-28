@@ -6,3 +6,5 @@ steps:
 - name: 'gcr.io/lightst/terraform'
   args: ['apply','-auto-approve','./terraform']
   id: 'tf_apply'  
+  env:
+  - 'TF_VAR_project_id=$PROJECT_ID'
