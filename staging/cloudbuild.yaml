@@ -8,5 +8,3 @@ steps:
   id: 'tf_apply'  
   env:
   - 'TF_VAR_project_id=$PROJECT_ID'
-
-serviceAccount: 'projects/${PROJECT_ID}/serviceAccounts/${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com'
