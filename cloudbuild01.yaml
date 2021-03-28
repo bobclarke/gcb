@@ -4,4 +4,7 @@ steps:
     '/bin/sh','-c',
     'echo Project is: $PROJECT_ID && echo Build ID is $BUILD_ID',
   ]
+
+- name: 'gcr.io/lightst/terraform'
+  args: ['plan terraform']  
   
