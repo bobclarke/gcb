@@ -9,7 +9,9 @@ steps:
 - name: 'alpine'
   args: ['ls','-al']
   id: 'dir_list'
+  waitFor: '-'
 
 - name: 'gcr.io/lightst/terraform'
   args: ['init','./terraform']
   id: 'tf_init'
+  waitFor: '-'
