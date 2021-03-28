@@ -1,0 +1,12 @@
+steps:
+- name: 'alpine'
+  args: [
+    '/bin/sh','-c',
+    'echo Project is: $PROJECT_ID && echo Build ID is $BUILD_ID',
+  ]
+
+- name: 'alpine'
+  args: ['ls','-al']
+
+#- name: 'gcr.io/lightst/terraform'
+#  args: ['plan','terraform']  
