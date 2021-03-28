@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/lightst/terraform'
+  args: ['init','./terraform']
+  id: 'tf_init'
+
+- name: 'gcr.io/lightst/terraform'
+  args: ['plan','./terraform']
+  id: 'tf_plan'  
