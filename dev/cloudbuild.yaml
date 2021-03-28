@@ -4,9 +4,12 @@ steps:
     '/bin/sh','-c',
     'echo Project is: $PROJECT_ID && echo Build ID is $BUILD_ID',
   ]
+  id: 'echo'
 
 - name: 'alpine'
   args: ['ls','-al']
+  id: 'dir_list'
 
 - name: 'gcr.io/lightst/terraform'
-  args: ['plan','./terraform']  
+  args: ['init','./terraform']
+  id: 'tf_init'
