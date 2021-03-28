@@ -5,6 +5,9 @@ steps:
     'echo Project is: $PROJECT_ID && echo Build ID is $BUILD_ID',
   ]
 
-- name: 'gcr.io/lightst/terraform'
-  args: ['plan terraform']  
+- name: 'alpine'
+  args: ['ls','-al']
+
+#- name: 'gcr.io/lightst/terraform'
+#  args: ['plan','terraform']  
   
