@@ -8,5 +8,5 @@ steps:
 - name: 'alpine'
   args: ['ls','-al']
 
-#- name: 'gcr.io/lightst/terraform'
-#  args: ['plan','terraform']  
+- name: 'gcr.io/lightst/terraform'
+  args: ['plan','./terraform']  
